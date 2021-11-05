@@ -10,8 +10,14 @@
   }
 }
 
-@mixin mobile {
-  @media (max-width: (768px)) {
+@mixin mobile-below {
+  @media (max-width: (767px)) {
+    @content;
+  }
+}
+
+@mixin mobile-above {
+  @media (min-width: (768px)) {
     @content;
   }
 }

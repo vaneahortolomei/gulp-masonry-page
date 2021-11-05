@@ -1,0 +1,27 @@
+%button {
+  display: block;
+  padding: 10px 15px;
+  border: 1px solid $color-border;
+  box-shadow: none;
+  transition: 0.2s;
+  cursor: pointer;
+  background: $color-white;
+}
+
+.button-transparent {
+  @extend %button;
+  border-radius: 50px;
+  background: transparent;
+  padding: 15px 30px;
+  width: 200px;
+  text-align: center;
+  &:hover {
+    border: 1px solid $color-white;
+    color: $color-white;
+  }
+  &--mobile {
+    @media(max-width: 575px){
+      width: initial;
+    }
+  }
+}

@@ -3,6 +3,9 @@
 @import "mixins";
 @import "fonts";
 @import "settings";
+@import "main-content";
 
 // подключения компонентов страницы
+@import "./components/buttons";
 @import "./components/header";
+@import "./components/menu";

@@ -1,0 +1,25 @@
+@mixin display-box($name, $direction) {
+  display: flex;
+
+  @if $name == justify-content {
+    justify-content: $direction;
+  }
+}
+
+//Margin $ padding classes like Bootstrap
+
+$spaces: (1,2,3,4,5);
+
+@each $space in $spaces {
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+}
+
+.burger {
+  padding: 20px;
+  @include burger();
+}

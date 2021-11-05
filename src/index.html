@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,14 +12,37 @@
 </head>
 
 <body>
-  <div class="site-container">
-    @include('partials/header.html')
-    <img src="img/cover.jpg" alt="Обложка" style="width: 100%;">
-    @include('partials/footer.html')
-    <!-- @include('html/h1.html') пример инклуда -->
+<div class="wrapper">
+  <div class="content">
+    <div class="container">
+      <div class="hidden-block">
+        <main class="main-content">
+          @include('partials/header.html')
+          <div class="main-content__header main-header">
+            <div class="main-header__info">
+              <h1 class="main-header__title">A digital <span>Product</span> Design</h1>
+              <p class="main-header__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="main-content__img"></div>
+          </div>
+        </main>
+      </div>
+    </div>
   </div>
-  <script src="js/vendor.js"></script>
-  <script src="js/main.js"></script>
+  @include('partials/footer.html')
+</div>
+
+<!--index page-->
+<!-- - header: WHo am i-->
+<!-- - about me-->
+<!-- - my skills-->
+<!-- - contact-->
+
+
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>
