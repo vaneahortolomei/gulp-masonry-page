@@ -25,10 +25,6 @@ a {
   color: $color-main;
 }
 
-.site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
-}
-
 .is-hidden {
   display: none !important; // stylelint-disable-line declaration-no-important
 }
