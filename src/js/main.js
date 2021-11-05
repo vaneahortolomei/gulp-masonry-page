@@ -1,6 +1,2 @@
-/**
-  * название функции
-  *
-  * @param {number} first - первое число
-  * @returns {number}
-  */
+console.log('main');
+console.log('a');
