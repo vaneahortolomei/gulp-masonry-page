@@ -1,14 +1,19 @@
-// базовые подключения
+// global import
 @import "vars";
 @import "mixins";
 @import "fonts";
 @import "settings";
 @import "main-content";
-@import "about";
 
-// подключения компонентов страницы
+// components
 @import "./components/buttons";
 @import "./components/header";
 @import "./components/menu";
-@import "./components/main-header";
 @import "./components/nav-menu";
+
+//sections
+@import "./sections/main-header";
+@import "./sections/about";
+
+
+
