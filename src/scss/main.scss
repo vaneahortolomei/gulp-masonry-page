@@ -4,9 +4,11 @@
 @import "fonts";
 @import "settings";
 @import "main-content";
+@import "about";
 
 // подключения компонентов страницы
 @import "./components/buttons";
 @import "./components/header";
 @import "./components/menu";
 @import "./components/main-header";
+@import "./components/nav-menu";

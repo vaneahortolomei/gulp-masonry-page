@@ -16,7 +16,7 @@
   <div class="content">
     <div class="container">
       <div class="hidden-block">
-        <main class="main-content">
+        <div class="main-content">
           @include('partials/header.html')
           <div class="main-content__header main-header">
             <div class="main-header__info">
@@ -24,13 +24,21 @@
               <p class="main-header__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
                 printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <p class="main-header__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
-            <div class="main-header__img"></div>
+            <div class="main-header__img">
+              <img src="img/person.png" alt="Обложка"/>
+            </div>
           </div>
           <section class="about">
-            <div class="about__img"></div>
+            <div class="about__img">
+              <img src="img/table.png" alt="Обложка"/>
+            </div>
             <div class="about__info">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+              <h1 class="about__title">A digital <span>Product</span> Design</h1>
+              <p class="about__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
                 printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy
                 text of the printing and typesetting
@@ -38,11 +46,12 @@
                 printer took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
           </section>
-        </main>
+          @include('partials/footer.html')
+        </div>
       </div>
     </div>
+    @include('partials/menu.html')
   </div>
-  @include('partials/footer.html')
 </div>
 
 <!--index page-->

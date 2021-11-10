@@ -1,0 +1,22 @@
+.about {
+  @media(min-width: 1024px){
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info,
+  &__img {
+    @media(min-width: 1024px) {
+      flex: 0 1 50%;
+      max-width: 50%;
+      img {
+        max-width: 350px;
+      }
+    }
+  }
+  &__img {
+    margin-bottom: 50px;
+    @media(min-width: 1024px){
+      margin-bottom: 0;
+    }
+  }
+}
