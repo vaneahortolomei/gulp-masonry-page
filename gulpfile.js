@@ -23,7 +23,7 @@ let isProd = false; // dev by default
 
 const clean = () => {
 	return del(['app/*'])
-}
+};
 
 //svg sprite
 const svgSprites = () => {
@@ -36,7 +36,7 @@ const svgSprites = () => {
       },
     }))
     .pipe(dest('./app/img'));
-}
+};
 
 const styles = () => {
   return src('./src/scss/**/*.scss')
