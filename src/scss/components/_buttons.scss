@@ -15,9 +15,11 @@
   padding: 15px 30px;
   width: 200px;
   text-align: center;
-  &:hover {
-    border: 1px solid $color-white;
-    color: $color-white;
+  @media(min-width: 768px){
+    &:hover {
+      border: 1px solid $color-white;
+      color: $color-white;
+    }
   }
   &--mobile {
     @media(max-width: 575px){
