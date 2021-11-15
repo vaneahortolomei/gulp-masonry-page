@@ -1,4 +1,10 @@
 .main-header {
+  margin-bottom: 50px;
+  @media(min-width: 768px){
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+  }
   &__info,
   &__img {
     @media(min-width: 1024px) {
