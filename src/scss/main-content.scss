@@ -8,7 +8,7 @@
   overflow: hidden;
   &__inner-wrapper {
     padding: 30px 20px;
-    @media(min-width: 768px){
+    @media(min-width: 1200px) {
       padding: 30px 100px;
     }
   }
@@ -16,7 +16,7 @@
 
 .hidden-block {
   position: relative;
-  @media(min-width: 768px){
+  @media(min-width: 768px) {
     &:before {
       content: '';
       position: absolute;

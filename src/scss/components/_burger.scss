@@ -8,7 +8,7 @@
   position: absolute;
   left: 20px;
   top: 15px;
-  z-index: 101;
+  z-index: 100;
   &__line {
     background: #fff;
     display: block;
@@ -36,16 +36,16 @@
     }
   }
   &--active {
-    .burger__line {
-      background: none;
-      &:before {
-        transform: translateY(8px) rotate(45deg);
-        background: #ff3767;
-      }
-      &:after {
-        transform: translateY(-10px) rotate(-45deg);
-        background: #ff3767;
-      }
-    }
+    //.burger__line {
+    //  background: none;
+    //  &:before {
+    //    transform: translateY(8px) rotate(45deg);
+    //    background: #ff3767;
+    //  }
+    //  &:after {
+    //    transform: translateY(-10px) rotate(-45deg);
+    //    background: #ff3767;
+    //  }
+    //}
   }
 }

@@ -1,0 +1,118 @@
+.form {
+  position: relative;
+  text-align: center;
+  &__input {
+    box-shadow: none;
+    padding: 0 15px;
+    height: 45px;
+    color: #000;
+  }
+  &__message {
+    outline: none;
+    padding: 10px 15px;
+    color: #000;
+    resize: none;
+    &::placeholder {
+      color: #919191;
+      font-size: 16px;
+    }
+  }
+  &__message, &__input {
+    width: 100%;
+    transition: border 0.2s;
+    border: 1px solid #d6dbe5;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 16px;
+    border-radius: 4px;
+    &::-webkit-input-placeholder {
+      color: #687792;
+    }
+    &::-moz-placeholder {
+      color: #687792;
+    }
+    /* Firefox 19+ */
+    &:-ms-input-placeholder {
+      color: #687792;
+    }
+    /* IE 10+ */
+    &:-moz-placeholder {
+      color: #687792;
+    }
+    /* Firefox 18- */
+    &:hover {
+      border: 1px solid #81bcff;
+    }
+    &:focus {
+      border: 1px solid #81bcff;
+    }
+  }
+  &__label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  &__hidden-label {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+  &__label-error {
+    color: #dc3545;
+  }
+  &__input-error {
+    border-bottom-color: #dc3545!important;
+  }
+  &__group {
+    margin-bottom: 20px;
+    text-align: left;
+    &--checkbox-line {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .success {
+      border: 1px solid green;
+    }
+  }
+  &__error {
+    font-size: 12px;
+    color: #dc3545;
+    margin-bottom: 0;
+    margin-top: 6px;
+    line-height: 16px;
+    font-weight: normal;
+    text-align: left;
+  }
+  &__register-button {
+    width: 100%;
+    margin-top: 20px;
+  }
+  &__chevron {
+    position: relative;
+    &:after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 8px;
+      margin: 0 0 0 8px;
+      height: 8px;
+      border-right: 2px solid #000;
+      border-bottom: 2px solid #000;
+      transform: rotate(
+          45deg);
+      border-radius: 1px;
+      transition: .2s;
+    }
+  }
+}

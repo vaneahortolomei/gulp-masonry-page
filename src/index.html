@@ -18,7 +18,7 @@
     <div class="container">
       <div class="hidden-block">
         <div class="main-content">
-          <div class="main-content__inner-wrapper">
+          <div id="content" class="main-content__inner-wrapper">
             @include('partials/header.html')
             <section id="header" class="main-header">
               <div class="main-header__info">
@@ -55,9 +55,9 @@
             </section>
             @include('partials/sections/portfolio.html')
           </div>
-          @include('partials/footer.html')
         </div>
       </div>
+      @include('partials/footer.html')
     </div>
     @include('partials/menu.html')
   </div>

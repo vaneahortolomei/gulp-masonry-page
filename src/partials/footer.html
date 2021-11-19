@@ -1,7 +1,49 @@
 <footer id="contact" class="footer">
-  <a href=""
-     title="Logo"
-     class="menu__link">
-    <img src="img/logo.png" alt="Обложка" class="menu__logo"/>
-  </a>
+  <div class="footer__picture">
+    <a href="#home"
+       title="Logo"
+       class="menu__link">
+      <img src="img/logo.png" alt="Обложка" class="menu__logo"/>
+    </a>
+    <h2 class="footer__picture-title">A digital Product Design, contact form send me message!</h2>
+     <picture>
+       <img src="img/contact.png" alt="contact"/>
+     </picture>
+  </div>
+  <div class="footer__form">
+    <h2 class="footer__form-title">GetStarted!</h2>
+    <form action="#" class="form" method="post">
+      <div class="form__group">
+        <label class="form__label"
+               for="name">Name
+        </label>
+        <input type="text"
+               id="name"
+               class="form-field form__input"
+        />
+        <span class="form__error"></span>
+      </div>
+      <div class="form__group">
+        <label class="form__label"
+               for="email">Email
+        </label>
+        <input type="text"
+               id="email"
+               class="form-field form__input"
+        />
+        <span class="form__error"></span>
+      </div>
+      <div class="form__group">
+        <label class="form__label"
+               for="message">Message
+        </label>
+        <textarea id="message"
+                  class="form-field form__message"
+                  rows="5">
+        </textarea>
+        <span class="form__error"></span>
+      </div>
+      <button type="submit" class="form__button button-form">Send</button>
+    </form>
+  </div>
 </footer>

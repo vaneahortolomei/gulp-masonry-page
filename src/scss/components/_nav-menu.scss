@@ -9,7 +9,7 @@
   z-index: 100;
   transition: 0.3s;
   transform: translate(-100%, 0);
-  overflow: hidden;
+  //overflow: hidden;
   @media(max-width: 768px){
     overflow-y: scroll;
   }
@@ -54,5 +54,18 @@
   }
   &--active {
     transform: translate(0, 0);
+  }
+  .burger {
+    .burger__line {
+      background: none;
+      &:before {
+        transform: translateY(8px) rotate(45deg);
+        background: #ff3767;
+      }
+      &:after {
+        transform: translateY(-10px) rotate(-45deg);
+        background: #ff3767;
+      }
+    }
   }
 }
