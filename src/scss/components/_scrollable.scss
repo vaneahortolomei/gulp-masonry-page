@@ -1,0 +1,24 @@
+.scrollable {
+  position: relative;
+  height: auto;
+  overflow: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  -webkit-overflow-scrolling: touch;
+  @media(max-width: 1199px){
+    > ul {
+      &:after {
+        content: " ";
+        flex: 0 0 20px;
+      }
+    }
+  }
+  @media(min-width: 1200px){
+    overflow: visible;
+    overflow: initial;
+    padding: 0;
+    margin: 0;
+  }
+}

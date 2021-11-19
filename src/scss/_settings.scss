@@ -16,6 +16,7 @@ body {
   color: $color-main;
   font-family: "asd", sans-serif;
   background: rgb(2, 0, 36);
+  transition: 0.3s;
   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(61, 60, 84, 1) 0%, rgba(160, 128, 149, 0.45) 0%, rgba(181, 182, 184, 1) 41%, rgba(222, 224, 218, 1) 86%);
 }
 
